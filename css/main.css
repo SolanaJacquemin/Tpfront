@@ -1,0 +1,516 @@
+
+*{
+    font-family: 'Helvica','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*serif, calibri, averta, finland, arvo, verona, quicksand, baskerville, bloggers sans, blacker, radio grotesk, woodland, symphony script*/
+    /* Gill Sans, Helvética, Myriad Pro, Open Sans, Rockwell, Roboto, Verdana*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+}
+html{
+    font-size: 62.5%;
+}
+
+/*'Girassol', cursive, */
+header {
+    width: 100%;
+    /*position: fixed; 
+    top: 0;
+    left:0;
+    padding: 10px;*/
+    background-color:#ECA3F5;
+    background-image: url(../imagenes/fondo4.jpg);
+    height: inherit; /*AVERIGUAR*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*justify-content: space-evenly;*/
+    flex-wrap: wrap; /*AVERIGUAR*/
+}
+header div{
+    justify-self: flex-start;
+    margin-left: 2.2rem;
+    /*width: 40%;*/
+}
+
+header a{
+    text-decoration: none;    
+}
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-right: 1.5rem;
+    /*margin-top: 35px;/**/
+    
+}
+header nav a{
+    border-radius: 20px;
+    font-family: 'Girassol', cursive, 'Helvica','Lucida Sans', sans-serif;
+    font-size: 2.5rem;
+ 
+    color: #551a8b;
+    /*width: 10%;*/
+    padding: 2rem;
+}
+header nav a:hover{
+    background-color: #fff8e7;
+    color:#ECA3F5;
+    transition: 3s;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive,'Lucida Sans', sans-serif;
+    font-size: 8rem;
+    color: black;
+
+
+}
+
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 5.5rem;
+    margin-top: 2.5rem;
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem;
+    margin-top: 2rem;
+}
+
+h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem; 
+    margin-bottom: 1.5rem;
+    
+
+}
+.justificar{
+    text-align: justify;
+}
+body{
+    background-color: #fff8e7;
+    background-image: url(../imagenes/fondo7.jpeg);
+    /*text-align: center;*/
+}
+main{
+    margin: 4rem 4rem 4rem 4rem;  
+}
+main section p{
+    text-align: justify;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+main h4{
+    display: inline;
+    text-align: justify;
+}
+/*Pagina principal*/
+.tarjeta-ejemplo{
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-top: 5rem;
+
+}
+.img1 {
+    height: 250px;
+    width: 100%;
+    border-radius: 50%;
+}
+.img1:hover{
+    box-shadow: 0px 0px 15px 15px #6e0861;
+    -webkit-box-shadow: 0px 0px 15px 15px #6e0861;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: 3s;
+}
+.textito{
+    text-align: center;
+    margin: 2rem 1rem 2rem 1rem;
+    /*margin-bottom: 2rem;
+    margin-top: ;
+    margin-left: 1rem;
+    margin-right: 1rem;    */
+}
+
+.contenido{
+    background-color:wheat;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+.tarjeta{
+    border:none !important;
+}
+
+/*Fin Pagina principal*/
+/*Inicio Pagina de productos*/
+.grid-container{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-rows: repeat(3, auto-fit);
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 5px;
+    grid-template-areas:
+    "area1 area2"
+    "area4 area3"
+    "area5 area6";/**/
+}
+.grid-item1 {
+    grid-area: area1;/**/
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    
+  }
+  .imagGrid{
+    height: 100%;
+    width: 100%; 
+    border-radius: 15%;
+  }
+  .imagGrid:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: 3s;
+  }
+.margentexto{
+    margin: 3rem;
+    font-size: 3rem;
+    text-align: center;
+}
+  
+  .grid-item2 {
+    background-image: url(../imagenes/borroso4.jpg) ;
+    text-align: center;
+    /*border: black 5px solid;*/
+    grid-area: area2;/**/
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+    opacity: 0.6;
+  }
+  .grid-item2:hover, .grid-item4:hover,.grid-item6:hover{
+    opacity: 1;/**/
+    transition: 1s;
+  }
+
+  .grid-item3 {
+    text-align: center;
+    grid-area: area3;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .grid-item4 {
+    background-image: url(../imagenes/borroso2.jpg);
+    text-align: center;
+    border-radius: 15%;
+    grid-area: area4;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+  }
+  .grid-item5 {
+    text-align: center;
+    grid-area: area5;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .grid-item6 {
+    background-image: url(../imagenes/borroso3.jpg);
+    text-align: center;
+    border-radius: 15%;
+    grid-area: area6;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+  }
+.grid-galeria{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.grid-galeria-item{
+    text-align: center;
+    /*background-color: wheat;*/
+    background-color:rgb(240, 187, 240);
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+}
+.imagGaleria{
+    margin-top: 5%;
+    height: 90%;
+    width: 90%; 
+    border-radius: 50%;
+  }
+  .imagGaleria:hover{
+      -webkit-transform:scale(2.5);
+      transform:scale(1.3);
+      border-radius: 5%;
+  }
+.espaciado{
+    margin-bottom: 3rem;
+}
+
+/*Fin Pagina de productos*/
+/* Inicio Pagina de Blog*/
+.deco-article{
+    border-width: 2px;
+    border-style: dotted;
+    border-radius: 5%;
+    padding: 2%;
+    margin-top: 2%;
+    border-color: blueviolet;
+    background: linear-gradient(180deg, wheat, #e3b9eb);
+}
+.grid-blog{
+    display: grid;
+    width: 100%;
+    grid-gap: 2%;
+    grid-template-columns: [x0] 49% [x1] 49% [x2];
+    grid-template-rows: [y0]0.25fr [y1]1fr [y2];
+}
+.grid-titulo{
+    text-align: center;
+    grid-column: x1/x2;
+    grid-row: y0/y1;
+}
+.deco-titulo{
+    border-bottom-style:dashed;
+    border-bottom-width:2px;
+}
+.grid-contenido{
+    text-align: justify;
+    width: 100%;
+   grid-column: x1/x2;
+   grid-row: y1/y2;
+}
+.deco-contenido1{
+    margin-left: 2%;
+
+}
+.deco-contenido1, .deco-contenido2{
+    margin-right: 3%;
+    margin-top: 3%;    
+}
+.deco-contenido2{
+    margin-left: 6%;
+    margin-bottom: 2%;
+}
+.deco-lista{
+    margin-bottom: 2%;
+}
+
+.grid-imagen{
+    width: 100%;
+    grid-column: x0/x1;
+    grid-row-start: y0;
+    grid-row-end: y2;
+}
+.deco-imagen{
+    height: 96%;
+    width: 96%;
+    margin: 2%; 
+    border-radius: 15%;
+    opacity: 0.75;
+}
+.deco-imagen:hover{
+    box-shadow: 0px 0px 15px 15px #6e0861;
+    transition: 3s;
+    opacity: 1;
+}
+/*Fin Pagina de Blog*/
+/*Inicio Pagina contacto*/
+.contacto-flex{
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    width: 100%;
+    justify-content: space-around;
+    /*margin-top: 5rem;*/
+    align-items: center;
+}
+.item-contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    text-align: center;
+    height: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.item-contacto2{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+fieldset {
+    background-color: #ecd6f0;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    margin-bottom: 50px;
+ 
+    text-align: center;
+}
+label {
+    text-shadow: #9a09bb ;
+    text-shadow: 5px;
+
+}
+textarea {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    resize: none;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9a09bb;
+    text-align: center;        
+}
+input {
+    width: 50%;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    resize: none;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #9a09bb;
+    text-align: center; 
+    padding: 20px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.centrar{
+    text-align: center; 
+}
+.margenbot{
+    margin-left: 10%;
+}
+.margenbot2{
+    margin-right: 10%;
+}
+
+.deco{
+    border-width: 1px;
+    /*border-bottom:dashed;
+    border-bottom: dotted;
+    border-bottom: double;
+    border-bottom: groove;*/
+    border-bottom: ridge;
+   /* border-color: blueviolet;*/
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    /*padding: none;*/
+}
+
+.deco:hover{
+    box-shadow: 0px 0px 15px 15px #d38dd3;
+}
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #9a09bb;
+    text-align: center;        
+}
+button:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: 2s;
+}
+.tam{
+    height: 100%;
+}
+
+
+/*Fin Pagina contacto*/
+.nav2{
+    text-align: center;
+}
+.div {
+    display: inline-block;
+    width: 300px;
+}
+
+footer{
+    width: 100%;
+    padding: 10px;/**/
+    background-color:#ECA3F5;
+    background-image: url(../imagenes/fondo4.jpg);
+    height: inherit; /*AVERIGUAR*/
+    display: flex;
+    align-items:baseline;
+    justify-content:space-evenly;
+    justify-items: center;
+    flex-wrap: wrap; /*AVERIGUAR*/
+    width: 100%;
+    /*text-align:inherit;*/
+    text-align: center;
+}
+footer div{ 
+   /* width: 260px;
+    height: 120px;*/
+    /*justify-self: flex-start;*/
+    justify-self: center;
+    text-align: center;
+    justify-items: center;
+    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer ul{
+    text-align: center;
+    list-style-type: none;
+}
+footer ul li{
+    margin-bottom: 0.5rem;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: #fff8e7;
+    color:#ECA3F5 !important;
+    padding: 5px;
+    -webkit-transform:scale(2);
+    transform:scale(2);
+    transition: 2s;
+    border-radius: 25%;
+
+}
+footer ul li a, footer ul li p{
+   font-family: 'Girassol', cursive, 'Helvica','Lucida Sans', sans-serif;
+   font-size: 2rem;
+   color: black;
+/* */
+}

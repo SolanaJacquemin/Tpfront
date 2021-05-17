@@ -6,39 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <script src="https://kit.fontawesome.com/4a283d08ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Girassol&display=swap" rel="stylesheet">    
+    <link rel="icon" href="imagenes/imagenBA2.jpg">
+    <!-- Enlace para animacion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
 </head>
 <body>
     <header>
-        <h1> Bian Art </h1>
-        <!-- Ingresar logo-->
-        <nav>
+        <div>
+            <a href="index.html"><h1 class="animate__animated animate__fadeInTopLeft"> Bian Art </h1> </a>
+        </div>
+
+        <nav class="animate__animated animate__fadeInTopRight">
             <a href="index.html"> Inicio </a>
             <a href="productos.html"> Productos </a>
             <a href="blog.html"> Blog </a>
+            <a href="nosotros.html"> Nosotros </a>
             <a href="contacto.html"> Contacto </a>
         </nav>
 
     </header>
     <main>
-        <h2>El blog del Mate</h2>
-        <article>
-            <h3> Como curar tu mate</h3>
-            <p>Ingrese texto e imagen, esto te deberia llevar a otra pagina</p>
-            <!-- Articulo de curar el mate-->
-
-        </article>
-        <article>
-            <h3>La supremacia de los mates de madera</h3>
-            <p>Comparacion entre tipos de mates mas imagen</p>
-            <!--Acticulo de la supremacia de los mates de madera-->        
-        </article>
-        <article>
-            <h3>Como armar y cebar tu mate</h3>
-            <p>No estaria muy segura del titulo, investigar</p>
-            <!--Articulo de recomendaciones de como armar el mate y la temperatura del agua-->        
-        </article>        
+        <h2 class="animate__animated animate__zoomInDown animate__delay-1s">El blog de Bian Art</h2>
+            <!-- Articulo de curar el mate-->        
+        <article class="deco-article animate__animated  animate__zoomIn animate__delay-2s">
+            <div class="grid-blog">
+                <div class="grid-imagen animate__animated animate__bounceInLeft  animate__delay-3s">
+                    <img src="imagenes/blogMate.jpg" class="deco-imagen" alt="curar el mate">                
+                </div>
+                <div class="grid-titulo animate__animated animate__bounceInRight  animate__delay-3s">
+                    <h3 class="deco-titulo"> 
+                        Como curar tu mate de calabaza
+                    </h3>
+                </div>
+                <div class="grid-contenido animate__animated animate__bounceInDown  animate__delay-3s">
+                    <p class="deco-contenido1">
+                        Los pasos para curar el mate de calabaza, son los siguientes:
+                    </p>
+                    <ol class="deco-contenido2">
+                        <li class="deco-lista">
+                            Lavar bien el interior del mate con agua caliente
+                        </li>
+                        <li class="deco-lista">
+                            Llenarllo con yerba húmeda ya usada previamente
+                        </li>
+                        <li class="deco-lista">
+                            Agregarle un poco de agua tibia para que la yerba no se seque y dejar reposar 24 hs
+                        </li>
+                        <li class="deco-lista">
+                            Al día siguiente, quitar la yerba y volver a repetir el paso 2 y 3, durante 3 o 4 días.
+                        </li>
+                        <li class="deco-lista">
+                            Quitar la yerba y con una cucharita raspá el interior para quitar el hollejo, 
+                            las membranas o los fragmentos de madera
+                        </li>
+                        <li class="deco-lista">
+                            ¡Tu mate ya esta listo para usar!
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>    
     </main>
-    <footer>
+     <footer>
         <div>
             <nav>
                 <ul>
@@ -55,10 +88,34 @@
                         <a href="blog.html"> Blog </a>
                     </li>
                     <li>
+                        <a href="nosotros.html"> Nosotros </a>
+                    </li>
+                    <li>
                         <a href="contacto.html"> Contacto </a>    
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h4>¡Seguinos!</h4>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=es" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-twitter"></i> 
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-facebook-f"></i> 
+                    </a>
+                    <a href="https://ar.pinterest.com/" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-pinterest"></i> 
+                    </a>
+                    <a href="https://www.instagram.com/bian_art/?hl=es-la" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                </li>
+            </ul>
         </div>
         <div>
             <ul>
@@ -82,33 +139,11 @@
                 </li>
                 <li>
                     <i class="fas fa-at"></i>
-                    <a href="mailto:solijacque@hotmail.com" target="_blank"> solijacque@hotmail.com</a>
+                    <a href="mailto:bianca.ginobili@gmail.com" target="_blank"> bianca.ginobili@gmail.com</a>
                 </li>
 
             </ul>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <h4>¡Seguinos!</h4>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=es" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-twitter"></i> 
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-facebook-f"></i> 
-                    </a>
-                    <a href="https://ar.pinterest.com/" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-pinterest"></i> 
-                    </a>
-                    <a href="https://www.instagram.com/bian_art/?hl=es-la" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-instagram"></i> 
-                    </a>
-                </li>
-            </ul>
-        </div>
+        </div> 
     </footer>
-    
 </body>
 </html>

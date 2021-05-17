@@ -6,58 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <script src="https://kit.fontawesome.com/4a283d08ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
+    <link rel="icon" href="imagenes/imagenBA2.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Girassol&display=swap" rel="stylesheet">    
+    <!-- Enlace para animacion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
     <header>
-        <h1> Bian Art </h1>
-        <!-- Ingresar logo-->
-        <nav>
+        <div>
+            <a href="index.html"><h1 class="animate__animated animate__fadeInTopLeft"> Bian Art </h1> </a>            
+        </div>
+
+        <nav class="animate__animated animate__fadeInTopRight">
             <a href="index.html"> Inicio </a>
             <a href="productos.html"> Productos </a>
             <a href="blog.html"> Blog </a>
+            <a href="nosotros.html"> Nosotros </a>
             <a href="contacto.html"> Contacto </a>
         </nav>
 
     </header>
     <main>
-        <h2> Contactanos </h2>
-        <div>
-            <h3>Llámanos</h3>
-            <p>
-                <i class="fas fa-phone"></i>
-                (011) 15 2502 1307
-            </p>
-            <h3>Whatsappeanos</h3>
-            <a href="https://api.whatsapp.com/send?phone=5491125021307" target="_blank" style="color: black;text-decoration: none;">
-                <i class="fab fa-whatsapp"></i> +54 9 11 2502 1307
-            </a>
-            <h3>Escribinos</h3>
-            <i class="fas fa-at"></i>
-            <a href="mailto:solijacque@hotmail.com" target="_blank"> solijacque@hotmail.com</a>
-            <h3>Acercate</h3>
-            <p>
-                <i class="fas fa-map-marker-alt"></i> 
-                Av. Gaona y Donato Álvarez           
-            </p>
-        </div>
-    
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.344408909259!2d-58.4578294!3d-34.6146263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbaee7969a08f24df!2sPlaza%20Irlanda!5e0!3m2!1ses!2sar!4v1618956145307!5m2!1ses!2sar" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-    
-        </div>
-        <div>
+        <section>
+            <h2 class="animate__animated animate__zoomInDown animate__delay-1s"> Contactanos </h2>            
+        </section>
+        <section class="contacto-flex">
+            <div class="item-contacto animate__animated animate__zoomInLeft animate__delay-2s">
+                <h3>Llámanos</h3>
+                <p class="deco">
+                    <i class="fas fa-phone"></i>
+                    (011) 15 2502 1307
+                </p>
+                <h3>Whatsappeanos</h3>
+                <p class="deco">
+                    <a href="https://api.whatsapp.com/send?phone=5491125021307" target="_blank" style="color: black;text-decoration: none;">
+                        <i class="fab fa-whatsapp"></i> +54 9 11 2502 1307
+                    </a>
+                </p>
+
+                <h3>Escribinos</h3>
+                <p class="deco">
+                    <i class="fas fa-at"></i>
+                    <a href="mailto:bianca.ginobili@gmail.com" target="_blank" > bianca.ginobili@gmail.com</a>
+                </p>
+                <h3>Seguinos</h3>
+                <p  class="deco">
+                    <a href="https://www.instagram.com/bian_art/?hl=es-la" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-instagram"></i> bian_art
+                    </a>        
+                </p>
+            </div>
+        
+            <div class="item-contacto animate__animated animate__zoomInRight animate__delay-3s">
+                <h3>
+                    Punto de encuentro:
+                </h3>
+                <p class="centrar"> 
+                    Nos encontramos principalemtente por la zona de Flores y Caballito. Pero podemos ir por todo CABA!
+                    Los puntos de encuentro suelen ser plazas o lugares públicos.
+                </p>
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.344408909259!2d-58.4578294!3d-34.6146263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbaee7969a08f24df!2sPlaza%20Irlanda!5e0!3m2!1ses!2sar!4v1618956145307!5m2!1ses!2sar" 
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+        
+            </div>
+        
+        </section>
+        <section>
             <form action="https://formspree.io/f/xrgrbynz" method="POST" target="_blank">
-                <fieldset>
+                <fieldset class="animate__animated animate__zoomInUp animate__delay-4s">
                     <legend> <h3>¡Te leemos!</h3> </legend>
                     
                     <label for="nombre">Nombre: 
                         <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
                     </label>
-                    
-                    <br>
-                    <br>
+                    <br><br>
                     <label for="apellido">Apellido: 
                         <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
                     </label>
@@ -75,17 +101,17 @@
                     <br><br>
         
                     <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Escriba su consulta" required></textarea>
-                    <!-- CAPTCHA  -->
-                    <p>
-                        <button type="submit" name="submit">Enviar</button>
-                        <button type="reset">Borrar</button> 
+
+                    <p class="centrar">
+                        <button type="submit" name="submit" class="marbenbot2">Enviar</button>
+                        <button type="reset" class="margenbot">Borrar</button> 
                     </p>    
                 </fieldset>
-        
-        
             </form>
-    
-        </div>
+        </section>
+                    
+
+
     </main>
 
 
@@ -106,10 +132,34 @@
                         <a href="blog.html"> Blog </a>
                     </li>
                     <li>
+                        <a href="nosotros.html"> Nosotros </a>
+                    </li>
+                    <li>
                         <a href="contacto.html"> Contacto </a>    
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h4>¡Seguinos!</h4>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=es" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-twitter"></i> 
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-facebook-f"></i> 
+                    </a>
+                    <a href="https://ar.pinterest.com/" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-pinterest"></i> 
+                    </a>
+                    <a href="https://www.instagram.com/bian_art/?hl=es-la" target="_blank" style="color: black;text-decoration: none;"> 
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                </li>
+            </ul>
         </div>
         <div>
             <ul>
@@ -133,32 +183,11 @@
                 </li>
                 <li>
                     <i class="fas fa-at"></i>
-                    <a href="mailto:solijacque@hotmail.com" target="_blank"> solijacque@hotmail.com</a>
+                    <a href="mailto:bianca.ginobili@gmail.com" target="_blank"> bianca.ginobili@gmail.com</a>
                 </li>
 
             </ul>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <h4>¡Seguinos!</h4>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=es" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-twitter"></i> 
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-facebook-f"></i> 
-                    </a>
-                    <a href="https://ar.pinterest.com/" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-pinterest"></i> 
-                    </a>
-                    <a href="https://www.instagram.com/bian_art/?hl=es-la" target="_blank" style="color: black;text-decoration: none;"> 
-                        <i class="fab fa-instagram"></i> 
-                    </a>
-                </li>
-            </ul>
-        </div>
+        </div> 
     </footer>
 </body>
 </html>

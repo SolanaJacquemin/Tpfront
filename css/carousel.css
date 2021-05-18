@@ -14,7 +14,7 @@
   background-color:#ECA3F5;
   background-image: url(../imagenes/fondo4.jpg);
   height: inherit;
-  /*height: 3rem; AVERIGUAR*/
+  /*height: 3rem; */
   display: flex;
   align-items: center;
    /*padding: 0 ;
@@ -23,7 +23,7 @@
   box-sizing: border-box;
   justify-content: space-around;*/
  justify-content: space-around;
-  flex-wrap: wrap; /*AVERIGUAR*/
+  flex-wrap: wrap; /**/
 }
 
 .mi-h1-deco{
@@ -63,12 +63,12 @@ footer{
   padding: 10px;/**/
   background-color:#ECA3F5;
   background-image: url(../imagenes/fondo4.jpg);
-  height: inherit; /*AVERIGUAR*/
+  height: inherit; /**/
   display: flex;
   align-items:baseline;
   justify-content:space-evenly;
   justify-items: center;
-  flex-wrap: wrap; /*AVERIGUAR*/
+  flex-wrap: wrap; /**/
   /*text-align:inherit;*/
   text-align: center;
 }

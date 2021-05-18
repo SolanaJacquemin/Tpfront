@@ -28,7 +28,7 @@
 
 .mi-h1-deco{
   font-family: 'Dancing Script', cursive,'Lucida Sans', sans-serif;
-  font-size: 5rem;/**/
+  font-size: 50px;/**/
   color: black;
   margin: 0;
   padding: 0;
@@ -48,11 +48,11 @@ header nav{
 header nav a{
   border-radius: 20px;
   font-family: 'Girassol', cursive, 'Helvica','Lucida Sans', sans-serif;
-  font-size: 1.55rem;
+  font-size: 20px;
+  padding: 15px;
   color: #551a8b;
   transition: 3s; 
   /*width: 10%;*/
-  padding: 20px;
 }
 header nav a:hover{
   background-color: #fff8e7;
@@ -92,9 +92,22 @@ footer ul{
 footer ul li{
   margin-bottom: 0.25rem;
 }
+footer a{
+  text-decoration: none;
+}
+footer a:hover{
+  background-color: #fff8e7;
+  color:#ECA3F5 !important;
+  padding: 5px;
+  -webkit-transform:scale(2);
+  transform:scale(2);
+  transition: 2s;
+  border-radius: 25%;
+
+}
 footer ul li a, footer ul li p, footer ul li i{
  font-family: 'Girassol', cursive, 'Helvica','Lucida Sans', sans-serif;
- font-size: 1.25rem;
+ font-size: 15px;
  color: black;
  margin:0%;
  padding: 0%;
@@ -103,7 +116,7 @@ footer ul li a, footer ul li p, footer ul li i{
 }
 h4{
   font-family: 'Dancing Script', cursive;
-  font-size: 2.189rem; 
+  font-size: 30px;
   margin-bottom: 0.99rem;
   color: black;
 
@@ -121,6 +134,12 @@ body{
   font-weight: bold;
 
 }
+.fuente-parrafo{
+  font-size: 15px;
+  color: black;
+  font-style: oblique;
+  font-weight: bold;
+}
 .h2-deco{
   font-family: 'Dancing Script', cursive;
   text-align: center;
@@ -130,18 +149,66 @@ body{
   margin-bottom: 0% ;
   
 }
-main section div img:hover {
+.carousel-item-img:hover {
   filter: blur(8px);
   transition: 3s;
 }
+/*main section div div img:hover {
+  filter: blur(8px);
+  transition: 3s;
+}*/
+
 h2{
   font-family: 'Dancing Script', cursive;
   text-align: center;
-  font-size: 55px;
+  font-size: 40px;
   color: black;
   margin-top: 25px;
   margin-bottom: 30px;
 }
+.nosotros-grid{
+  display: grid;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  grid-gap: 2%;
+  align-items: center;
+  grid-template-columns: [x0] 49% [x1] 49% [x2];
+  grid-template-rows: [y0]0.25fr [y1] 1fr [y2] ;
+}
+.nosotros-grid-titulo{
+  text-align: center;
+  
+  grid-row: y0/y1;
+  grid-column: x0/x2;
+}
+.nosotros-grid-photo{
+  text-align: center;
+  height: 100%;
+  grid-row: y1/y2;
+  grid-column: x0/x1;
+}
+.nosotros-grid-contenido{
+  text-align: center;
+  /*height: 100%;*/
+  grid-row: y1/y2;
+  grid-column: x1/x2;
+}
+.nosotros-imagen-deco{
+  height: 100% ;
+  width: 100% ;
+  opacity: 0.8;
+ /* position: static !important;*/
+}
+.nosotros-imagen-deco:hover{
+  box-shadow: 0px 0px 15px 15px #6e0861;
+  -webkit-box-shadow: 0px 0px 15px 15px #6e0861;
+  border-radius: 50%;
+  transition: 3s;
+  opacity: 1;
+}
+
   /*Fin de mi decoracion*/
   /* Padding below the footer and lighter body text */
 
@@ -169,13 +236,16 @@ body {
   .carousel-item {
     height: 32rem;
   }
-  .carousel-item > img {
+  .carousel-item-img{
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 32rem;
-  }
+  }/*
+  .carousel-item > img {
+    
+  }*/
  
   
   
@@ -216,6 +286,24 @@ body {
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
+  @media (min-width:350px){
+    .mi-h1-deco{
+      font-size: 5rem;/**/
+    }
+    header nav a{
+      font-size: 1.55rem;
+      padding: 20px;
+    }
+    footer ul li a, footer ul li p, footer ul li i{
+      font-size: 1.25rem;
+     }
+     h4{
+      font-size: 2.189rem; 
+    }
+    h2{
+      font-size: 55px;
+    }
+  }
   
   @media (min-width: 40em) {
     /* Bump up size of carousel content */
@@ -230,20 +318,23 @@ body {
     .h2-deco{
       font-size: 55px;
     }
-  
     .featurette-heading {
       font-size: 50px;
+    }
+    .mi-h1-deco{
+      font-size: 5rem;/**/
+    }
+    header nav a{
+      font-size: 1.55rem;
+      padding: 20px;
+    }
+    .fuente-parrafo{
+      font-size: 20px;
     }
   }
   
   @media (min-width: 62em) {
     .featurette-heading {
       margin-top: 7rem;
-    }
-    .fuente-deco{
-      font-size: 40px;
-    }
-    .h2-deco{
-      font-size: 55px;
     }
   }
